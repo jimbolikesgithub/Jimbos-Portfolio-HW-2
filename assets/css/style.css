@@ -287,6 +287,19 @@ header h1 {
     color: var(--dk-blue);
 }
 
+#contact-me p a::before {
+    background: var(--dk-blue);
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    transition: all ease-in-out 200ms;
+}
+
+#contact-me p a:hover::before {
+    width: 100%;
+    transition: all ease-in-out 200ms;
+}
 
 
 /* Media Query */
@@ -333,12 +346,11 @@ header h1 {
         }
     
         ul li a::before {
-            position: relative;
-            background: var(--dk-blue);
+            background: var(--lg-white);
             content: '';
             display: block;
-            width: 100%;
-            height: 6px;
+            width: 0%;
+            height: 3px;
             transition: all ease-in-out 200ms;
         }
 
